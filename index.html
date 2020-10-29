@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Giovanni Francesco Guarnieri</title>
+    <script src="https://kit.fontawesome.com/aefafbaa3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <!-- Cabeçalho -->
+    <header id="cabecalho">
+        <div id="logo">
+            <a href="./">gfguarnieri</a>
+        </div>
+        <a href="javascript:menu()" id="menu-mobile"><i class="fas fa-bars"></i></a>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section id="perfil">
+            <div id="descricao">
+                <h2>Giovanni Francesco Guarnieri</h2>
+                <h3>Cientista, desenvolvedor e professor</h3>
+            </div>
+            <img src="./images/perfil.jpg" alt="Perfil Giovanni Guarnieri">
+        </section>
+
+        <section id="sobre">
+            <div class="conteudo">
+                <a href="#sobre"><h1>Sobre mim</h1></a>
+                <p>
+                    Olá! Meu nome é Giovanni, tenho <label id="idade">28</label> anos e sou formado em Informática pela Etec Sales Gomes (Tatuí - 2011), Gestão de Tecnologia da Informação pela Faculdade de Tecnologia de Tatuí (2013), Licenciatura em Computação pela Claretiano de Sorocaba (2017), Docência do Ensino Superior com Ênfase em Políticas Educacionais pela Faculdade Corporativa CESPI de Pirajú (2017) e atualmente sou mestrando em Ciência da Computação pela Universidade Federal de São Carlos (campus de Sorocaba).
+                </p>
+            </div>    
+        </section>
+        <section id="projetos">
+            <div class="conteudo">
+                <h1>Portfólio</h1>
+                <div id="lista">
+                    <div class="projeto">
+                        <img src="./images/salesgomes.png">
+                        <div class="descricao-projeto">
+                            <p>WEBSITE</p>
+                            <p><a href="https://www.etecsalesgomes.com.br/" target="_blank">Etec Sales Gomes <i class="fas fa-link"></i></a></p>
+                        </div>
+                        <p>Website Etec Sales Gomes</p>
+                    </div>
+                    <div class="projeto">
+                        <img src="./images/edsongalvao.png">
+                        <div class="descricao-projeto">
+                            <p>WEBSITE</p>
+                            <p><a href="https://www.etecedsongalvao.com.br/" target="_blank">Etec Edson Galvão <i class="fas fa-link"></i> </a></p>
+                        </div>
+                        <p>Website Etec Edson Galvão</p>
+                    </div>
+                    <div class="projeto">
+                        <img src="./images/penasecia.png">
+                        <div class="descricao-projeto">
+                            <p>WEBSITE</p>
+                            <p><a href="http://www.penasecia.com.br/" target="_blank">Penas & Cia <i class="fas fa-link"></i> </a></p>
+                        </div>
+                        <p>Website Penas & Cia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="contato">
+            <div class="conteudo">
+                <h1>Contato</h1>
+                <p>
+                    Tem alguma ideia? Escreva para mim: 
+                </p>
+                <div id="regiao">
+                    <form action="" method="post">
+                        <input type="text" name="nome" placeholder="Digite o seu nome">
+                        <input type="email" name="email" placeholder="Digite o seu email">
+                        <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                        <input type="submit" value="ENVIAR"/>
+                    </form>
+                </div> 
+            </div>
+        </section> -->
+    </main>    
+    <!-- Rodapé -->
+    <footer>
+        <label>Desenvolvido por Giovanni Francesco Guarnieri</label>
+        <div id="midias">
+            <a href="http://github.com/gfguarnieri"><i class="fab fa-github-square"></i></a>
+            <a href="https://facebook.com/gfguarnieri"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/gfguarnieri/"><i class="fab fa-instagram-square"></i> </a>
+        </div>  
+    </footer>
+
+    <label id="voltar"><i class="fas fa-chevron-circle-up"></i></label>   
+
+</body>
+<script src="./js/home.js"></script>
+</html>

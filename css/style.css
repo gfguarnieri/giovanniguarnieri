@@ -2,6 +2,24 @@
     margin: 0;
     transition: 0.1s;
 }
+
+button, input, select, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-input-placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+:-moz-placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-moz-placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+:-ms-input-placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 a{
     text-decoration: none;
 }
@@ -16,6 +34,8 @@ body{
     background-size: 100%;
     scrollbar-color: red yellow;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 
@@ -194,7 +214,7 @@ section#perfil h2{
 section #descricao h3{
     text-align: right;
     font-weight: 100;
-    color: white
+    color: white;
 }
 
 section#perfil img{
@@ -210,18 +230,31 @@ section#projetos .conteudo{
     flex-direction: column !important;
 }
 
+section#contato .conteudo{
+    display: flex ; 
+    color: black;
+    flex-direction: column !important;
+}
+
+section#contato .conteudo h1{
+    font-size: 2em;
+    color: black;
+}
+
 section#contato{
     border:0;
     padding-bottom: 50px;
-    background-color: #333;
+    background-color: white;
 }
 
 section#contato #regiao{
     display: flex;    
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 100%;
+}
+
+section#contato #regiao img{
+    width: 45%;
 }
 
 footer #midias a{
@@ -245,12 +278,29 @@ footer #midias{
 section#contato form{
     display:flex;
     flex-direction: column;
-    width: 60%;
+    margin-top: 20px;
+    width: 50%;
 }
 
 section#contato input[type=text],input[type=email], textarea{
-    font-size: 2em;
+    font-size: 1em;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
 }
+
+section#contato input[type=text]:hover,input[type=email]:hover, textarea:hover{
+    background-color: #ccc;
+}
+
+section#contato input[type=text]:focus,input[type=email]:focus, textarea:focus{
+    background-color: #eee;
+    outline: none;
+}
+
+
+
 section#contato textarea, input{
     margin: 10px 0px;
 }
@@ -260,6 +310,12 @@ section#contato input[type=submit]{
     width: 120px;
     height: 80px;
     font-weight: bold;
+}
+
+section#contato input[type=submit]:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -345,6 +401,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 0px 110px;
+    border-top: 1px solid #333;
     color: black;
     background-color: white;
     font-weight: bold;
@@ -364,6 +421,10 @@ footer{
     font-size: 2.5em;
     text-shadow:  1px 1px 1px white;
     color: #666;
+}
+
+#voltar:hover{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1050px) {
@@ -483,6 +544,28 @@ footer{
 
     section#perfil h3{
         text-align: center;
+    }
+
+    section#contato #regiao img{
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    section#contato #regiao form{
+        width: 90%;
+    }
+
+    section#contato #regiao{
+        display: flex;    
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    section#contato input[type=submit]{
+        margin-left: auto;
+        margin-right: auto;
     }
 
     header>nav>ul>li{

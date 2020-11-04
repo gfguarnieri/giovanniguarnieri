@@ -8,6 +8,8 @@
     <meta name="robots" content="index, follow"/>
     <title>Giovanni Francesco Guarnieri</title>
     <script src="https://kit.fontawesome.com/aefafbaa3d.js" crossorigin="anonymous" async></script>
+    <script src="./js/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -29,8 +31,8 @@
 
     <!-- Conteúdo principal -->
     <main>
-        <section id="perfil">
-            <div id="descricao">
+        <section id="perfil" class="animate__animated animate__backInDown">
+            <div id="descricao" >
                 <h2>Giovanni Francesco Guarnieri</h2>
                 <h3>Cientista, desenvolvedor e professor</h3>
             </div>
@@ -76,22 +78,20 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="contato">
+        <section id="contato">
             <div class="conteudo">
-                <h1>Contato</h1>
-                <p>
-                    Tem alguma ideia? Escreva para mim: 
-                </p>
+                <h1>Escreva para mim</h1>
                 <div id="regiao">
-                    <form action="" method="post">
-                        <input type="text" name="nome" placeholder="Digite o seu nome">
-                        <input type="email" name="email" placeholder="Digite o seu email">
-                        <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <img src="./images/fundo_contato.svg" alt="Área de contato" title="Contato">
+                    <form action="" method="post" autocomplete="off">
+                        <input type="text" name="nome" placeholder="Nome" minlength="5" required>
+                        <input type="email" name="email" placeholder="Email" minlength="5" required>
+                        <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem" minlength="5" required></textarea>
                         <input type="submit" value="ENVIAR"/>
                     </form>
                 </div> 
             </div>
-        </section> -->
+        </section>
     </main>    
     <!-- Rodapé -->
     <footer>
@@ -102,9 +102,7 @@
             <a href="https://www.instagram.com/gfguarnieri/"><i class="fab fa-instagram-square"></i> </a>
         </div>  
     </footer>
-
     <label id="voltar"><i class="fas fa-chevron-circle-up"></i></label>   
-
 </body>
 <script src="./js/home.js"></script>
 </html>

@@ -33,4 +33,15 @@ function menu(){
   }
 }
 
-
+ScrollOut({
+  targets: "section#sobre,section#projetos,section#contato",
+  onShown: function(element, ctx, scrollingElement) {
+      element.style.setProperty('--animate-duration', '0.7s');
+      element.classList.remove('animate__animated', 'animate__zoomOut');
+      element.classList.add('animate__animated', 'animate__zoomIn');
+  },
+  onHidden: function(element, ctx, scrollingElement) {  
+    element.classList.remove('animate__animated', 'animate__zoomIn');
+    element.classList.add('animate__animated', 'animate__zoomOut');
+  }
+});

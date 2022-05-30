@@ -1,108 +1,189 @@
+<!--
+    Tem alguma dica para o meu código? Me notifique (:
+    https://github.com/gfguarnieri/giovanniguarnieri
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cientista, desenvolvedor e professor."/>
-    <meta name="keywords" content="Giovanni, Guarnieri, Professor"/>
-    <meta name="robots" content="index, follow"/>
-    <title>Giovanni Francesco Guarnieri - New Version</title>
-    <script src="https://kit.fontawesome.com/aefafbaa3d.js" crossorigin="anonymous" async></script>
-    <script src="./js/scroll-out.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="Dev/." />
+    <meta name="keywords" content="Giovanni, Guarnieri, Professor" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="js/home.js" defer></script>
+    <title>Dev GFGUARNIERI</title>
 </head>
+
 <body>
-    
-    <!-- Cabeçalho -->
-    <header id="cabecalho">
-        <div id="logo">
-            <a href="./">gfguarnieri</a>
-        </div>
-        <a href="javascript:menu()" id="menu-mobile"><i class="fas fa-bars"></i></a>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header>
+        <a href="#" title="Linkedin">
+            <i class="devicon-linkedin-plain"></i>
+        </a>
+        <a href="#" title="GitHub">
+            <i class="devicon-github-original"></i>
+        </a>
     </header>
-
-    <!-- Conteúdo principal -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Início</a>
+            </li>
+            <li>
+                <a href="#">Formação acadêmica</a>
+            </li>
+            <li>
+                <a href="#">Projetos</a>
+            </li>
+            <li>
+                <a href="#">Experiência</a>
+            </li>
+        </ul>
+        <span id="btn-side-menu">
+            <i class="ph-caret-left"></i>
+        </span>
+    </nav>
+    <!-- Main -->
     <main>
-        <section id="perfil" class="animate__animated animate__backInDown">
-            <div id="descricao" >
-                <h2>Giovanni Francesco Guarnieri</h2>
-                <h3>Cientista, desenvolvedor e professor</h3>
-            </div>
-            <img src="./images/perfil.jpg" alt="Perfil Giovanni Guarnieri" title="Giovanni Guarnieri">
+        <section class="header">
+            <img src="images/perfil.jpg" alt="Giovanni Guarnieri - Desenvolvedor"
+                title="Giovanni Guarnieri - Desenvolvedor">
+            <h1 class="name font-primary">Giovanni Guarnieri</h1>
+            <h2 class="slogan">
+                < Programando soluções />
+            </h2>
         </section>
 
-        <section id="sobre">
-            <div class="conteudo">
-                <a href="#sobre"><h1>Sobre mim</h1></a>
-                <p>
-                    Olá! Meu nome é Giovanni, tenho <label id="idade">28</label> anos e sou formado em Informática pela Etec Sales Gomes (Tatuí - 2011), Gestão de Tecnologia da Informação pela Faculdade de Tecnologia de Tatuí (2013), Licenciatura em Computação pela Claretiano de Sorocaba (2017), Docência do Ensino Superior com Ênfase em Políticas Educacionais pela Faculdade Corporativa CESPI de Pirajú (2017) e atualmente sou mestrando em Ciência da Computação pela Universidade Federal de São Carlos (campus de Sorocaba).
-                </p>
-            </div>    
-        </section>
-        <section id="projetos">
-            <div class="conteudo">
-                <h1>Portfólio</h1>
-                <div id="lista">
-                    <div class="projeto">
-                        <img src="./images/salesgomes.jpg" title="Etec Sales Gomes" alt="Projeto Etec Sales Gomes">
-                        <div class="descricao-projeto">
-                            <p>WEBSITE</p>
-                            <p><a href="https://www.etecsalesgomes.com.br/" target="_blank">Etec Sales Gomes <i class="fas fa-link"></i></a></p>
-                        </div>
-                        <p>Website Etec Sales Gomes</p>
-                    </div>
-                    <div class="projeto">
-                        <img src="./images/edsongalvao.jpg" title="Etec Edson Galvão" alt="Projeto Etec Edson Galvão">
-                        <div class="descricao-projeto">
-                            <p>WEBSITE</p>
-                            <p><a href="https://www.etecedsongalvao.com.br/" target="_blank">Etec Edson Galvão <i class="fas fa-link"></i> </a></p>
-                        </div>
-                        <p>Website Etec Edson Galvão</p>
-                    </div>
-                    <div class="projeto">
-                        <img src="./images/penasecia.jpg" title="Penas & Cia" alt="Projeto Penas & Cia">
-                        <div class="descricao-projeto">
-                            <p>WEBSITE</p>
-                            <p><a href="http://www.penasecia.com.br/" target="_blank">Penas & Cia <i class="fas fa-link"></i> </a></p>
-                        </div>
-                        <p>Website Penas & Cia</p>
-                    </div>
-                </div>
+        <div class="item">
+            <div class="frameworks">
+                <a href="#" class="framework">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML 5</span>
+                </a>
+                <a href="#" class="framework">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS 3</span>
+                </a>
+                <a href="#" class="framework">
+                    <i class="devicon-angularjs-plain colored"></i>
+                    <span>Angular 2</span>
+                </a>
+                <a href="#" class="framework">
+                    <i class="devicon-typescript-plain colored"></i>
+                    <span>TypeScript</span>
+                </a>
+                <a href="#" class="framework">
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <span>NodeJS</span>
+                </a>
+                <a href="#" class="framework">
+                    <i class="devicon-jest-plain colored"></i>
+                    <span>JEST</span>
+                </a>
             </div>
-        </section>
-        <section id="contato">
-            <div class="conteudo">
-                <h1>Escreva para mim</h1>
-                <div id="regiao">
-                    <img src="./images/fundo_contato.svg" alt="Área de contato" title="Contato">
-                    <form action="" method="post" autocomplete="off">
-                        <input type="text" name="nome" placeholder="Nome" minlength="5" required>
-                        <input type="email" name="email" placeholder="Email" minlength="5" required>
-                        <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem" minlength="5" required></textarea>
-                        <input type="submit" value="ENVIAR"/>
-                    </form>
-                </div> 
-            </div>
-        </section>
-    </main>    
-    <!-- Rodapé -->
+        </div>
+        <div class="item">
+            <h2>
+                < Formação acadêmica />
+            </h2>
+            <ul>
+                <li>
+                    Mestre em Ciência da Computação (stricto sensu):
+                    <ul>
+                        <li>2018-2022</li>
+                        <li>Universidade Federal de São Carlos / Campus Sorocaba.</li>
+                        <li>Linha de pesquisa: redução de custo do teste de mutação utilizando similaridade entre
+                            programas. </li>
+                        <li>Título do trabalho: SiMut: um framework automatizado para apoiar a redução do custo do teste
+                            de mutação com base em similaridade de programas.</li>
+                    </ul>
+                </li>
+                <li>
+                    Pós-graduado em Banco de Dados (lato sensu):
+                    <ul>
+                        <li>
+                            Faculdade Claretiano.
+                        </li>
+                        <li>
+                            jan/2021 - jul/2021
+                        </li>
+                        <li>
+                            Conteúdo; modelagem de banco de dados, integração de banco de dados relacional com variadas
+                            linguagens de programação (CSharp, PHP e Java).
+                        </li>
+                        <li>
+                            SGBD: MySql.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Licenciado em Computação pela Faculdade Claretiano.
+                </li>
+                <li>
+                    Tecnólogo em Gestão da Tecnologia da Informação pela Faculdade de Tecnologia de Tatuí.
+                    <ul>
+                        <li>
+                            C, Java e banco de dados relacional.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Técnico em Informática pela Etec Sales Gomes.
+                    <ul>
+                        <li>CSharp, Delphi, PHP e banco de dados relacional.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>
+                < Projetos />
+            </h2>
+            <ul>
+                <li> Item 1</li>
+                <li> Item 1</li>
+                <li> Item 1</li>
+                <li> Item 1</li>
+                <li> Item 1</li>
+                <li> Item 1</li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>
+                < Experiência />
+            </h2>
+            <ul>
+                <li> Item 1</li>
+                <li> Item 1</li>
+                <li> Item 1</li>
+                <li> Item 1</li>
+                <li> Item 1</li>
+                <li> Item 1</li>
+            </ul>
+        </div>
+        <div class="item">
+
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <label>Desenvolvido por Giovanni Francesco Guarnieri</label>
-        <div id="midias">
-            <a href="http://github.com/gfguarnieri"><i class="fab fa-github-square"></i></a>
-            <a href="https://facebook.com/gfguarnieri"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/gfguarnieri/"><i class="fab fa-instagram-square"></i> </a>
-        </div>  
+        <h3 class="slogan">
+            < gfguarnieri />
+        </h3>
+        <div class="cycle">
+            <i class="ph-coffee"></i>
+            <i class="ph-caret-right"></i>
+            <i class="ph-code"></i>
+            <i class="ph-caret-right"></i>
+            <i class="ph-checks"></i>
+        </div>
     </footer>
-    <label id="voltar"><i class="fas fa-chevron-circle-up"></i></label>   
 </body>
-<script src="./js/home.js"></script>
+
 </html>

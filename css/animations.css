@@ -1,0 +1,35 @@
+@keyframes floating {
+    from{
+        transform: translateY(0rem);
+    }
+    to{
+        transform: translateY(0.2rem);
+    }
+}
+
+@keyframes arrow {
+    from{
+        text-shadow: 5px 0px 1px var(--secondary);;
+    }
+    to{
+        text-shadow: 7px 0px 1px var(--secondary);;
+    }
+}
+
+@keyframes arrowCycle {
+    from{
+        text-shadow: 2px 0px 1px var(--secondary);;
+    }
+    to{
+        text-shadow: 4px 0px 1px var(--secondary);;
+    }
+}
+
+@keyframes icons {
+    from{
+        color: black;
+    }
+    to{
+        color: var(--secondary);
+    }
+}

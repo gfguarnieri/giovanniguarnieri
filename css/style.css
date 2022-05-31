@@ -25,6 +25,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-size: 1.1em; 
 }
 
 nav {
@@ -197,7 +198,7 @@ main .item {
 main .item h2 {
     font-family: "Parisienne", cursive;
     color: var(--secondary);
-    font-size: 1.5em;
+    font-size: 2.2em;
     font-weight: normal;
     text-align: center;
 }
@@ -217,6 +218,7 @@ main>.item>ul>li {
 main ul li {
     text-align: justify;
     font-weight: lighter;
+    font-size: 1em;
 }
 
 .frameworks {
@@ -270,9 +272,6 @@ footer .slogan{
         width: 90%;
     }
 
-    .slogan {
-        font-size: 1.5em;
-    }
     footer .cycle{
         width: 100%;
     }

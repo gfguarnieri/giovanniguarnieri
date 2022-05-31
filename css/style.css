@@ -34,7 +34,7 @@ nav {
     padding: 2rem 2rem;
     z-index: 1;
     transition: transform 300ms;
-    background-color: #eeeb;
+    background-color: #eeee;
     backdrop-filter: blur(3px);
 }
 

@@ -14,6 +14,10 @@ li {
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -21,7 +25,6 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    scroll-behavior: smooth;
 }
 
 nav {
@@ -31,7 +34,8 @@ nav {
     padding: 2rem 2rem;
     z-index: 1;
     transition: transform 300ms;
-    background-color: #eeee;
+    background-color: #eeeb;
+    backdrop-filter: blur(3px);
 }
 
 nav ul {
@@ -239,7 +243,7 @@ footer .ph-caret-right {
 
 footer {
     margin: 0.5rem auto;
-    box-sizing: border-box;
+
     padding: 2rem 3rem;
     display: flex;
     flex-wrap: wrap;
@@ -247,6 +251,7 @@ footer {
     align-items: center;
     gap: 2rem;
     font-size: 2em;
+    box-sizing: border-box;
 }
 
 footer .cycle{
@@ -257,7 +262,7 @@ footer .cycle{
 }
 
 footer .slogan{
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 @media screen and (max-width: 720px) {
@@ -268,6 +273,9 @@ footer .slogan{
     .slogan {
         font-size: 1.5em;
     }
+    footer .cycle{
+        width: 100%;
+    }
 }
 
 @media print {
@@ -276,4 +284,5 @@ footer .slogan{
     header {
         display: none;
     }
+
 }

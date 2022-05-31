@@ -21,27 +21,30 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <a href="#" title="Linkedin">
+    <header id="home">
+        <a href="https://www.linkedin.com/in/gfguarnieri/" title="Linkedin">
             <i class="devicon-linkedin-plain"></i>
         </a>
-        <a href="#" title="GitHub">
+        <a href="https://github.com/gfguarnieri" title="GitHub">
             <i class="devicon-github-original"></i>
         </a>
     </header>
-    <nav>
+    <nav class="hide">
         <ul>
             <li>
-                <a href="#">Início</a>
+                <a href="#home">Início</a>
             </li>
             <li>
-                <a href="#">Formação acadêmica</a>
+                <a href="#academic">Formação acadêmica</a>
             </li>
             <li>
-                <a href="#">Projetos</a>
+                <a href="#projects">Projetos</a>
             </li>
             <li>
-                <a href="#">Experiência</a>
+                <a href="#papers">Artigos</a>
+            </li>
+            <li>
+                <a href="#experience">Experiência</a>
             </li>
         </ul>
         <span id="btn-side-menu">
@@ -55,50 +58,50 @@
                 title="Giovanni Guarnieri - Desenvolvedor">
             <h1 class="name font-primary">Giovanni Guarnieri</h1>
             <h2 class="slogan">
-                < Programando soluções />
+                < propondo e programando soluções />
             </h2>
         </section>
 
         <div class="item">
             <div class="frameworks">
-                <a href="#" class="framework">
+                <a href="https://www.w3.org/" class="framework">
                     <i class="devicon-html5-plain colored"></i>
                     <span>HTML 5</span>
                 </a>
-                <a href="#" class="framework">
+                <a href="https://www.w3.org/" class="framework">
                     <i class="devicon-css3-plain colored"></i>
                     <span>CSS 3</span>
                 </a>
-                <a href="#" class="framework">
+                <a href="https://angular.io/" class="framework">
                     <i class="devicon-angularjs-plain colored"></i>
                     <span>Angular 2</span>
                 </a>
-                <a href="#" class="framework">
+                <a href="https://www.typescriptlang.org/" class="framework">
                     <i class="devicon-typescript-plain colored"></i>
                     <span>TypeScript</span>
                 </a>
-                <a href="#" class="framework">
+                <a href="https://nodejs.org/en/" class="framework">
                     <i class="devicon-nodejs-plain colored"></i>
                     <span>NodeJS</span>
                 </a>
-                <a href="#" class="framework">
+                <a href="https://jestjs.io/pt-BR/" class="framework">
                     <i class="devicon-jest-plain colored"></i>
                     <span>JEST</span>
                 </a>
             </div>
         </div>
         <div class="item">
-            <h2>
-                < Formação acadêmica />
+            <h2 id="academic">
+                < formação acadêmica />
             </h2>
             <ul>
                 <li>
                     Mestre em Ciência da Computação (stricto sensu):
                     <ul>
-                        <li>2018-2022</li>
-                        <li>Universidade Federal de São Carlos / Campus Sorocaba.</li>
+                        <li>2018 - 2022;</li>
+                        <li>Universidade Federal de São Carlos / Campus Sorocaba;</li>
                         <li>Linha de pesquisa: redução de custo do teste de mutação utilizando similaridade entre
-                            programas. </li>
+                            programas; </li>
                         <li>Título do trabalho: SiMut: um framework automatizado para apoiar a redução do custo do teste
                             de mutação com base em similaridade de programas.</li>
                     </ul>
@@ -107,14 +110,14 @@
                     Pós-graduado em Banco de Dados (lato sensu):
                     <ul>
                         <li>
-                            Faculdade Claretiano.
+                            jan/2021 - jul/2021;
                         </li>
                         <li>
-                            jan/2021 - jul/2021
+                            Faculdade Claretiano;
                         </li>
                         <li>
-                            Conteúdo; modelagem de banco de dados, integração de banco de dados relacional com variadas
-                            linguagens de programação (CSharp, PHP e Java).
+                            Conteúdo: modelagem de banco de dados, integração de banco de dados relacional com variadas
+                            linguagens de programação (CSharp, PHP e Java);
                         </li>
                         <li>
                             SGBD: MySql.
@@ -122,48 +125,211 @@
                     </ul>
                 </li>
                 <li>
-                    Licenciado em Computação pela Faculdade Claretiano.
+                    Licenciado em Computação:
+                    <ul>
+                        <li>
+                            2017;
+                        </li>
+                        <li>
+                            Faculdade Claretiano.
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    Tecnólogo em Gestão da Tecnologia da Informação pela Faculdade de Tecnologia de Tatuí.
+                    Tecnólogo em Gestão da Tecnologia da Informação:
                     <ul>
+                        <li>
+                            2010 - 2013;
+                        </li>
+                        <li>
+                            Faculdade de Tecnologia de Tatuí;
+                        </li>
                         <li>
                             C, Java e banco de dados relacional.
                         </li>
                     </ul>
                 </li>
                 <li>
-                    Técnico em Informática pela Etec Sales Gomes.
+                    Técnico em Informática:
                     <ul>
+                        <li>2010 - 2011;</li>
+                        <li>Etec Sales Gomes;</li>
                         <li>CSharp, Delphi, PHP e banco de dados relacional.</li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="item">
-            <h2>
-                < Projetos />
+            <h2 id="projects">
+                < projetos implementados />
             </h2>
             <ul>
-                <li> Item 1</li>
-                <li> Item 1</li>
-                <li> Item 1</li>
-                <li> Item 1</li>
-                <li> Item 1</li>
-                <li> Item 1</li>
+                <li>
+                    Sistema de gestão de Simpósio da Faculdade de Tecnologia de Tatuí:
+                    <ul>
+                        <li>2013 - 2016;</li>
+                        <li>PHP, Mysql e CSharp;</li>
+                        <li>Painel administrativo com Content Management System;</li>
+                        <li>Geração de certificado e QR Code para validação de presença em eventos</li>
+                    </ul>
+                </li>
+                <li>
+                    Website - Etec Sales Gomes
+                    <ul>
+                        <li>2014 - atualmente;</li>
+                        <li>PHP e Mysql</li>
+                        <li>Painel administrativo com Content Management System.</li>
+                    </ul>
+                </li>
+                <li>
+                    Aplicativo de Realidade Aumentada - Boneca Interativa Charmosa - Cotiplás:
+                    <ul>
+                        <li>2015 - 2016;</li>
+                        <li>Unity3D, CSharp e Vuforia; </li>
+                        <li>Publicação de App no Google Play Store e App Store.</li>
+                    </ul>
+                </li>
+                <li>
+                    Jogo de Realidade Aumentada - Fantoche - Cotiplás:
+                    <ul>
+                        <li>2015 - 2016;</li>
+                        <li>Unity3D, CSharp e Vuforia;</li>
+                        <li>Publicação de App no Google Play Store e App Store.</li>
+                    </ul>
+                </li>
+                <li>
+                    Website - Penas & Cia:
+                    <ul>
+                        <li>2018 - atualmente;</li>
+                        <li>Painel administrativo com Content Management System.</li>
+                    </ul>
+                </li>
+                <li>
+                    Framework - framework automatizado para apoiar a redução do custo do teste de mutação com base em
+                    similaridade de programas:
+                    <ul>
+                        <li>2018 - atualmente</li>
+                        <li>Java, Maven, Docker, MySql, Weka, Aprendizagem de Máquina não supervisionado (K-Means e
+                            Expectation Maximization), similaridade entre strings (Jaccard, Levenshtein e NCD).</li>
+                    </ul>
+                </li>
+                <li>
+                    Website - Etec Edson Galvão:
+                    <ul>
+                        <li>2019 - atualmente;</li>
+                        <li>PHP e Mysql.</li>
+                        <li>Painel administrativo com Content Management System.</li>
+                    </ul>
+                </li>
+                <li>
+                    Website - Cardápio Digital
+                    <ul>
+                        <li>2022;</li>
+                        <li>Tailwindcss.</li>
+                    </ul>
+                </li>
+                <li>
+                    Aplicativo - Apoio para Busca Ativa - Etec Sales Gomes
+                    <ul>
+                        <li>2022 - atualmente</li>
+                        <li>Front-end: Angular e Ionic</li>
+                        <li>Back-end: Node.js</li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="item">
-            <h2>
-                < Experiência />
+            <h2 id="papers">
+                < artigos científicos publicados />
             </h2>
             <ul>
-                <li> Item 1</li>
-                <li> Item 1</li>
-                <li> Item 1</li>
-                <li> Item 1</li>
-                <li> Item 1</li>
-                <li> Item 1</li>
+                <li>Definition of a Knowledge Base Towards a Benchmark for Experiments with Mutation Testing
+                    <ul>
+                        <li>2021</li>
+                        <li>Simpósio Brasileiro de Engenharia de Software</li>
+                        <li>
+                            PIZZOLETO, Alessandro; GUARNIERI, Giovanni; FERRARI, Fabiano. Definition of a Knowledge Base
+                            Towards a Benchmark for Experiments with Mutation Testing. In: SIMPÓSIO BRASILEIRO DE
+                            ENGENHARIA DE SOFTWARE (SBES), 35. , 2021, Joinville. Porto Alegre: Sociedade Brasileira de
+                            Computação, 2021 .
+                        </li>
+                    </ul>
+                </li>
+
+                <li>An Automated Framework for Cost Reduction of Mutation Testing Based on Program Similarity
+                    <ul>
+                        <li>2022</li>
+                        <li>15th IEEE International Conference on Software Testing, Verification and Validation (ICST)
+                            2022
+                            - Mutation</li>
+                        <li>
+                            GUARNIERI, G. F.; PIZZOLETO, A. V.; FERRARI, F. C. An Automated Framework for Cost Reduction
+                            of
+                            Mutation Testing Based on Program Similarity. In: 15th International Workshop on Mutation
+                            Analysis (Mutation). [S.l.: s.n.], 2022. (to appear).
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="item">
+
+        </div>
+        <div class="item">
+            <h2 id="experience">
+                < experiência />
+            </h2>
+            <ul>
+                <li>Faculdade de Tecnologia de Tatuí
+                    <ul>
+                        <li>
+                            2011 - 2012;
+                        </li>
+                        <li>
+                            Monitor de Linguagem de Programação Java;
+                        </li>
+                        <li>
+                            Monitor de Banco de Dados.
+                        </li>
+                    </ul>
+                </li>
+                <li>Cenaic
+                    <ul>
+                        <li>
+                            2012 - 2014;
+                        </li>
+                        <li>
+                            Professor de informática básica e criação de jogos.
+                        </li>
+                    </ul>
+                </li>
+                <li>Qi Studio
+                    <ul>
+                        <li>
+                            2013 - 2013;
+                        </li>
+                        <li>
+                            Desenvolvedor full-stack: HTML, CSS, Javascript, PHP e MySql.
+                        </li>
+                    </ul>
+                </li>
+                <li>Etec Sales Gomes
+                    <ul>
+                        <li>
+                            2014 - atualmente;
+                        </li>
+                        <li>
+                            Professor de Programação e Aplicativos Mobile, Programação e Algoritmos, Banco de Dados Relacional, Programação Web, Gestão de Conteúdo Web e Qualidade e Teste de Software;
+                        </li>
+                        <li>
+                           Linguagens trabalhadas: CSharp, PHP, HTML, CSS, Javascript, Python (para automações com Selenium) e MySql;
+                        </li>
+                        <li>
+                            Coordenador do curso de Informática para Internet - Descentralizada de Iperó - Parceria entre Centro Paula Souza com a Secretaria da Educação.
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="item">
